@@ -1,0 +1,23 @@
+# Antigravity CLI / AI cache
+.antigravitycli
+.gemini
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS
+.DS_Store
+
+# Since this is a monorepo, backend and frontend should respect their own .gitignore files.
+# But just in case, we add global ignores here as well.
+/backend/vendor/
+/backend/.env
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env

@@ -1,0 +1,48 @@
+
+/* ─── PAGE TRANSITION ─────────────────────────────────────────────────────── */
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-enter {
+  animation: pageEnter 0.38s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ─── BUTTON PRESS MICRO-ANIMATION ───────────────────────────────────────── */
+button:not(:disabled):active {
+  transform: scale(0.95) !important;
+  transition: transform 0.1s ease !important;
+}
+
+/* ─── PRINT STYLES ────────────────────────────────────────────────────────── */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-ticket,
+  .print-ticket * {
+    visibility: visible;
+  }
+  .print-ticket {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+  @page {
+    size: 80mm 150mm;
+    margin: 0mm;
+  }
+}

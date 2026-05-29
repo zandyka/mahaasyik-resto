@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import "tailwindcss";
+@import "./theme.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #FFF8F0;
+  color: #3D2010;
+  overflow-x: hidden;
+}
+
+/* Animations from Figma Make */
+@keyframes floatA { 0%,100% { transform: translateY(0px) rotate(-4deg); } 50% { transform: translateY(-22px) rotate(4deg); } }
+@keyframes floatB { 0%,100% { transform: translateY(0px) rotate(3deg); } 50% { transform: translateY(-18px) rotate(-5deg); } }
+@keyframes floatC { 0%,100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-14px) rotate(7deg); } }
+@keyframes floatD { 0%,100% { transform: translateY(0px) rotate(-6deg); } 50% { transform: translateY(-26px) rotate(3deg); } }
+@keyframes floatE { 0%,100% { transform: translateY(0px) rotate(6deg); } 50% { transform: translateY(-20px) rotate(-7deg); } }
+
+.stat-card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 20px rgba(61,32,16,0.08);
+}
+.stat-card:hover {
+  box-shadow: 0 14px 40px rgba(61,32,16,0.16);
+}
+
+.menu-card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 12px rgba(61,32,16,0.08);
+}
+.menu-card:hover {
+  box-shadow: 0 16px 44px rgba(61,32,16,0.18);
+  transform: translateY(-6px) scale(1.008);
+}
+
+.hover-overlay {
+  opacity: 0;
+  transition: opacity 0.22s ease;
+  pointer-events: none;
+}
+.menu-card:hover .hover-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.reviews-scroll::-webkit-scrollbar { display: none; }
+.reviews-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+
+.review-card { transition: transform 0.2s ease; }
+.review-card:hover { transform: translateY(-4px); }
+
+@keyframes wa-pulse {
+  0%  { transform: scale(1);   opacity: 0.72; }
+  70% { transform: scale(1.8); opacity: 0; }
+  100%{ transform: scale(1.8); opacity: 0; }
+}
+
+.cat-scroll::-webkit-scrollbar { display: none; }
+.cat-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(232,82,26,0.22), 0 2px 16px rgba(232,82,26,0.12);
+}
+
+@keyframes bounce-in {
+  0%   { transform: scale(0.4) translateY(16px); opacity: 0; }
+  65%  { transform: scale(1.08) translateY(-3px); opacity: 1; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.fab-option {
+  animation: bounce-in 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.res-input:focus {
+  border-color: rgba(232,82,26,0.65) !important;
+  box-shadow: 0 0 0 3px rgba(232,82,26,0.14);
+  outline: none;
+}
+
+.tech-card {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  cursor: default;
+}
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(232,82,26,0.18) !important;
+}
+
+.team-card {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  cursor: default;
+}
+.team-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 48px rgba(232,82,26,0.18) !important;
+  border-color: #E8521A !important;
+}
+
+/* ─── PAGE TRANSITION ─────────────────────────────────────────────────────── */
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-enter {
+  animation: pageEnter 0.38s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ─── BUTTON PRESS ────────────────────────────────────────────────────────── */
+button:not(:disabled):active {
+  transform: scale(0.95) !important;
+  transition: transform 0.1s ease !important;
+}
+
+
+html.dark-mode { filter: invert(1) hue-rotate(180deg); background-color: #111; }
+html.dark-mode img, html.dark-mode video, html.dark-mode iframe, html.dark-mode .no-invert, html.dark-mode .emoji { filter: invert(1) hue-rotate(180deg); }
+html.dark-mode .gunungan-logo { filter: invert(1) hue-rotate(180deg); }
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #E5E7EB;
+  border-radius: 10px;
+}
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #D1D5DB;
+}

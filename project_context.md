@@ -74,4 +74,4 @@ Backend melayani dua fungsi utama: API Endpoint untuk frontend, dan Admin Panel 
 * **Code Cleanup:** Membersihkan _file_ sampah, konfigurasi Axios lama, logo React bawaan, dan komponen sisa dari transisi *JavaScript* ke *TypeScript*.
 
 ---
-_Dokumen ini digenerate secara otomatis untuk mendampingi penyusunan laporan final dari sistem informasi Restoran Mahaasyik._
+*Dokumen ini digenerate secara otomatis untuk mendampingi penyusunan laporan final dari sistem informasi Restoran Mahaasyik.*

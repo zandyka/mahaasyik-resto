@@ -116,7 +116,7 @@ export function Footer() {
             className="font-['Plus_Jakarta_Sans'] text-xs text-center"
             style={{ color: "rgba(255,255,255,0.32)" }}
           >
-            &copy; 2025 Mahaasyik. Dibuat dengan ❤️ oleh Grup PKI
+            &copy; 2026 Mahaasyik. Dibuat dengan komputer oleh saya
           </p>
         </div>
       </div>

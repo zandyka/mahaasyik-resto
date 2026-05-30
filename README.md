@@ -84,4 +84,4 @@ Buka terminal **baru** (biarkan terminal backend tetap menyala), lalu jalankan p
 Setelah menjalankan seeder, Anda dapat masuk ke halaman Admin Dashboard melalui URL **`http://localhost:5173/admin/login`** (atau sesuaikan dengan URL aplikasi Anda) menggunakan kredensial default yang telah diatur di dalam `DatabaseSeeder.php`.
 
 ---
-*Dibuat untuk dokumentasi Proyek Pengembangan Web.*
+*Dibuat untuk dokumentasi Proyek Pengembangan Web mahaasyik.*

@@ -22,3 +22,7 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Allow menu images to be committed
+!/storage/app/public/menus/
+!/storage/app/public/menus/*

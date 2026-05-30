@@ -18,6 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
+-- buat dulu database dengan 'mahaasyik' lalu import sql ini
 -- Database: `mahaasyik`
 --
 

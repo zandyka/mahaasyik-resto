@@ -114,7 +114,7 @@ export function ReservasiPage() {
       };
 
       const payload = {
-        name, phone, email, date, time, adults: Number(adults), children: Number(kids), seating_area: mapSeating(seating), message: notes,
+        name, phone, email: email || "guest@mahaasyik.com", date, time, adults: Number(adults), children: Number(kids), seating_area: mapSeating(seating), message: notes,
         has_order: hasOrder,
         promo_code: promoState === "valid" ? promoCode : null,
         items: hasOrder ? Object.keys(orderQty).map(menuName => {
